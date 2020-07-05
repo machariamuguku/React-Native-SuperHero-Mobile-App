@@ -1,17 +1,25 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {StyleSheet, View, Button} from 'react-native';
+
+import {Sample} from '../sample';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
 export function Home({navigation}) {
   return (
-    <View>
-      <Text>This is home</Text>
+    <View style={styles.container}>
       <Button
-        title="Go to john's profile"
+        title="Go to profile"
         onPress={() => {
           navigation.navigate('Profile', {
-            data: {
-              name: 'john',
-            },
+            hero: Sample,
           });
         }}
       />
