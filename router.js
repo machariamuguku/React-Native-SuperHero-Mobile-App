@@ -23,7 +23,13 @@ export function Router() {
         <Stack.Screen
           name="Profile"
           component={Profile}
-          options={{title: 'Profile'}}
+          options={{
+            title: 'Profile',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              textAlign: 'right',
+            },
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
