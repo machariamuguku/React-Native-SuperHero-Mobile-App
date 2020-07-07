@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import {Sample} from '../sample';
+import {HomeCard} from '../Components/homeCard';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,19 +19,21 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: '#ffffff',
   },
   TextInputContainer: {
-    flex: 3,
+    flex: 4,
     borderColor: 'gray',
     borderWidth: 1,
-    borderRadius: 4,
-    marginHorizontal: 10,
-    height: 50,
+    borderRadius: 6,
+    marginLeft: 10,
+    height: 40,
+    backgroundColor: '#e2e2e2',
   },
   searchButtonContainer: {
     flex: 1,
-    marginRight: 10,
-    height: 45,
+    marginHorizontal: 10,
+    height: 40,
   },
   searchButton: {
     flex: 1,
@@ -42,26 +45,48 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
   },
-  separator: {
-    marginVertical: 8,
-    borderBottomColor: '#737373',
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
   mainContainer: {
-    flex: 5,
+    flex: 8,
+    justifyContent: 'center',
+    alignContent: 'center',
+  },
+  cardHolderContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    alignContent: 'space-around',
+    marginTop: 20,
+  },
+  cardHolder: {
+    width: '46%',
+    height: '26%',
   },
 });
 
 export function Home({navigation}) {
-  const [superHeroValue, setSuperHeroValue] = useState('Find Your SuperHero');
+  const [superHeroes, setSuperHeroes] = useState([
+    Sample,
+    Sample,
+    Sample,
+    Sample,
+    Sample,
+    Sample,
+  ]);
+  const [superHeroName, setSuperHeroName] = useState('Find Your SuperHero');
+
+  const navigateToProfile = superHero =>
+    navigation.navigate('Profile', {
+      hero: superHero,
+    });
 
   return (
     <View style={styles.container}>
       <View style={styles.searchContainer}>
         <View style={styles.TextInputContainer}>
           <TextInput
-            onChangeText={text => setSuperHeroValue(text)}
-            value={superHeroValue}
+            onChangeText={text => setSuperHeroName(text)}
+            value={superHeroName}
           />
         </View>
 
@@ -78,9 +103,21 @@ export function Home({navigation}) {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={styles.separator} />
       {/* 2 */}
-      <View style={styles.mainContainer} />
+      <View style={styles.mainContainer}>
+        <View style={styles.cardHolderContainer}>
+          {/* map superheroes */}
+          {superHeroes.map((aSuperHero, cardIndex) => (
+            //  card
+            <View style={styles.cardHolder} key={cardIndex}>
+              <HomeCard
+                SuperHero={aSuperHero}
+                navigateToProfile={() => navigateToProfile(aSuperHero)}
+              />
+            </View>
+          ))}
+        </View>
+      </View>
     </View>
   );
 }
