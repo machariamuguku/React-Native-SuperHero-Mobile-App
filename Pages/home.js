@@ -13,6 +13,7 @@ import {
   Keyboard,
 } from 'react-native';
 
+// query helper with built in cache
 import {useQuery} from 'react-query';
 
 import {HomeCard} from '../Components/homeCard';

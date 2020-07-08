@@ -5081,6 +5081,13 @@ react-native@0.62.2:
     use-subscription "^1.0.0"
     whatwg-fetch "^3.0.0"
 
+react-query@^2.4.14:
+  version "2.4.14"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.4.14.tgz#26c5cb663cd5ae7865204e31f8e21554ba53c69d"
+  integrity sha512-yxLMKZ6ZOvOg9oCfzUxcA0hMivWHrpvZxhySTIn7ED5tUkiewy5ogNpFW3sHje33INO3AKgFdB341mMjJ+Gu4w==
+  dependencies:
+    ts-toolbelt "^6.9.4"
+
 react-refresh@^0.4.0:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.4.3.tgz#966f1750c191672e76e16c2efa569150cc73ab53"
@@ -5994,6 +6001,11 @@ tr46@^1.0.1:
   integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   dependencies:
     punycode "^2.1.0"
+
+ts-toolbelt@^6.9.4:
+  version "6.10.1"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.10.1.tgz#0200a0f49a1ffea22c8b50c750940e2db400a1e8"
+  integrity sha512-yRPcOXPjUfaUjrVSJ5xP1vFTZYa2Gcop0DjGtIIM1ELSGX1x5/bFIVneBhrh1uiTFBGaXFV+7hsNKU4l27eiOA==
 
 tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
