@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
   img: {
-    width: '90%',
-    height: '94%',
+    width: 140,
+    height: 102,
     borderRadius: 8,
     borderColor: '#000',
     alignSelf: 'center',
