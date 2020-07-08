@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
 });
 
 export function Home({navigation}) {
-  const [superHeroName, setSuperHeroName] = useState('Find Your SuperHero');
+  const [superHeroName, setSuperHeroName] = useState('');
   const [superHeroData, setSuperHeroData] = useState([]);
   const [superHeroFetchError, setSuperHeroFetchError] = useState('');
 
@@ -158,6 +158,7 @@ export function Home({navigation}) {
         <View style={styles.searchContainer}>
           <View style={styles.TextInputContainer}>
             <TextInput
+              placeholder="Find Your SuperHero!"
               onChangeText={text => setSuperHeroName(text)}
               value={superHeroName}
             />
