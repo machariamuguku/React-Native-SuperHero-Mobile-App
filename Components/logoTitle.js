@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   img: {
-    width: 30,
-    height: 30,
+    width: 42,
+    height: 42,
     marginRight: 2,
   },
   title: {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 export function LogoTitle({children}) {
   return (
     <View style={styles.container}>
-      <Image style={styles.img} source={require('../assets/512x512.png')} />
+      <Image style={styles.img} source={require('../assets/app_logo.png')} />
       <Text style={styles.title}>{children}</Text>
     </View>
   );
