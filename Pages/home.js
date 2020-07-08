@@ -65,11 +65,11 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     alignContent: 'space-around',
-    marginTop: 20,
+    marginTop: 15,
   },
   cardHolder: {
-    width: 165,
-    height: 113,
+    flexBasis: '46%',
+    height: '25%',
   },
 });
 
