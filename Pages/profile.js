@@ -118,7 +118,7 @@ export function Profile({route}) {
           {/* show placeholder if image is not present */}
           <Image
             source={
-              hero.image.url
+              hero?.image?.url
                 ? {
                     uri: hero.image.url,
                   }
@@ -129,9 +129,7 @@ export function Profile({route}) {
           <View style={styles.Right}>
             {/* show "unknown if name is not given" */}
             <Text style={styles.RightHeader}>
-              {hero.biography['full-name']
-                ? hero.biography['full-name']
-                : 'Unknown'}
+              {hero.biography['full-name'] ? hero.biography['full-name'] : '-'}
             </Text>
 
             {/* flex table */}
@@ -149,16 +147,16 @@ export function Profile({route}) {
               </View>
 
               <View style={styles.Header}>
-                <Text>{hero.name !== 'null' ? hero.name : '?'}</Text>
+                <Text>{hero.name !== 'null' ? hero.name : '-'}</Text>
                 <Text>
                   {hero.biography.publisher !== 'null'
                     ? hero.biography.publisher
-                    : '?'}
+                    : '-'}
                 </Text>
                 <Text>
                   {hero.biography.alignment !== 'null'
                     ? capitalizeFirstLetter(hero.biography.alignment)
-                    : '?'}
+                    : '-'}
                 </Text>
               </View>
             </View>
@@ -171,7 +169,7 @@ export function Profile({route}) {
             <Text style={styles.BText}>
               {hero.powerstats.intelligence !== 'null'
                 ? hero.powerstats.intelligence
-                : '?'}
+                : '-'}
             </Text>
             <Text style={styles.BTextHeader}>Intelligence</Text>
           </View>
@@ -179,13 +177,13 @@ export function Profile({route}) {
             <Text style={styles.BText}>
               {hero.powerstats.strength !== 'null'
                 ? hero.powerstats.strength
-                : '?'}
+                : '-'}
             </Text>
             <Text style={styles.BTextHeader}>Strength</Text>
           </View>
           <View>
             <Text style={styles.BText}>
-              {hero.powerstats.speed !== 'null' ? hero.powerstats.speed : '?'}
+              {hero.powerstats.speed !== 'null' ? hero.powerstats.speed : '-'}
             </Text>
             <Text style={styles.BTextHeader}>Speed</Text>
           </View>
@@ -233,9 +231,19 @@ export function Profile({route}) {
                           {/* right side */}
                           <View style={styles.Content}>
                             <Text>
-                              {entryValue && entryValue !== 'null'
+                              {/* if the value is an array, map and separate */}
+                              {entryValue && typeof entryValue === 'object'
+                                ? entryValue.map(
+                                    (values, entryValueIndex) =>
+                                      `${values}${
+                                        entryValueIndex < entryValue.length - 1
+                                          ? ' / '
+                                          : ''
+                                      }`,
+                                  )
+                                : entryValue !== 'null'
                                 ? entryValue
-                                : '?'}
+                                : '-'}
                             </Text>
                           </View>
                         </View>
