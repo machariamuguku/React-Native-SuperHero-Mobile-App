@@ -9,6 +9,8 @@ import {
   RefreshControl,
   ActivityIndicator,
   Alert,
+  TouchableWithoutFeedback,
+  Keyboard,
 } from 'react-native';
 
 import {useQuery} from 'react-query';
@@ -112,10 +114,14 @@ export function Home({navigation}) {
           createButtonAlert();
           setSuperHeroData(trimmedData);
           setIsReFetching(false);
+          // dismiss keyboard
+          Keyboard.dismiss();
           return;
         }
         setSuperHeroData(fetchData.results);
         setIsReFetching(false);
+        // dismiss keyboard
+        Keyboard.dismiss();
         return;
       }
       setSuperHeroFetchError(fetchData.error);
@@ -147,75 +153,77 @@ export function Home({navigation}) {
     });
 
   return (
-    <View style={styles.container}>
-      <View style={styles.searchContainer}>
-        <View style={styles.TextInputContainer}>
-          <TextInput
-            onChangeText={text => setSuperHeroName(text)}
-            value={superHeroName}
-          />
-        </View>
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+      <View style={styles.container}>
+        <View style={styles.searchContainer}>
+          <View style={styles.TextInputContainer}>
+            <TextInput
+              onChangeText={text => setSuperHeroName(text)}
+              value={superHeroName}
+            />
+          </View>
 
-        <View style={styles.searchButtonContainer}>
-          {/* Button */}
-          <TouchableOpacity
-            style={styles.searchButton}
-            onPress={() => {
-              searchByName(superHeroName);
-            }}>
-            <Text style={styles.searchButtonText}>Q</Text>
-          </TouchableOpacity>
+          <View style={styles.searchButtonContainer}>
+            {/* Button */}
+            <TouchableOpacity
+              style={styles.searchButton}
+              onPress={() => {
+                searchByName(superHeroName);
+              }}>
+              <Text style={styles.searchButtonText}>Q</Text>
+            </TouchableOpacity>
+          </View>
         </View>
-      </View>
-      {/* 2 */}
-      <View style={styles.mainContainer}>
-        <View style={styles.cardHolderContainer}>
-          <ScrollView
-            contentContainerStyle={styles.scrollView}
-            // handle page refresh (refetch on pull down)
-            refreshControl={
-              <RefreshControl
-                refreshing={isReFetching}
-                onRefresh={invalidateAndRefetch}
-              />
-            }>
-            {!isFetchingSuperHeroes ? (
-              // there was an error fetching
-              superHeroFetchError ? (
-                <Text>{superHeroFetchError}</Text>
-              ) : superHeroData.length > 0 ? (
-                // map found superheroes
-                superHeroData.map((aSuperHero, cardIndex) => (
-                  //  card
-                  <View style={styles.cardHolder} key={cardIndex}>
-                    <HomeCard
-                      SuperHero={aSuperHero}
-                      navigateToProfile={() => navigateToProfile(aSuperHero)}
-                    />
-                  </View>
-                ))
-              ) : superHeroesStatus === 'success' ? (
-                // map random superheroes
-                superHeroesData.map((aSuperHero, cardIndex) => (
-                  //  card
-                  <View style={styles.cardHolder} key={cardIndex}>
-                    <HomeCard
-                      SuperHero={aSuperHero}
-                      navigateToProfile={() => navigateToProfile(aSuperHero)}
-                    />
-                  </View>
-                ))
+        {/* 2 */}
+        <View style={styles.mainContainer}>
+          <View style={styles.cardHolderContainer}>
+            <ScrollView
+              contentContainerStyle={styles.scrollView}
+              // handle page refresh (refetch on pull down)
+              refreshControl={
+                <RefreshControl
+                  refreshing={isReFetching}
+                  onRefresh={invalidateAndRefetch}
+                />
+              }>
+              {!isFetchingSuperHeroes ? (
+                // there was an error fetching
+                superHeroFetchError ? (
+                  <Text>{superHeroFetchError}</Text>
+                ) : superHeroData.length > 0 ? (
+                  // map found superheroes
+                  superHeroData.map((aSuperHero, cardIndex) => (
+                    //  card
+                    <View style={styles.cardHolder} key={cardIndex}>
+                      <HomeCard
+                        SuperHero={aSuperHero}
+                        navigateToProfile={() => navigateToProfile(aSuperHero)}
+                      />
+                    </View>
+                  ))
+                ) : superHeroesStatus === 'success' ? (
+                  // map random superheroes
+                  superHeroesData.map((aSuperHero, cardIndex) => (
+                    //  card
+                    <View style={styles.cardHolder} key={cardIndex}>
+                      <HomeCard
+                        SuperHero={aSuperHero}
+                        navigateToProfile={() => navigateToProfile(aSuperHero)}
+                      />
+                    </View>
+                  ))
+                ) : (
+                  <Text>There was an error fetching. Pull down to refresh</Text>
+                )
               ) : (
-                <Text>There was an error fetching. Pull down to refresh</Text>
-              )
-            ) : (
-              !isReFetching && (
-                <ActivityIndicator size="large" color="#0000ff" />
-              )
-            )}
-          </ScrollView>
+                !isReFetching && (
+                  <ActivityIndicator size="large" color="#0000ff" />
+                )
+              )}
+            </ScrollView>
+          </View>
         </View>
       </View>
-    </View>
+    </TouchableWithoutFeedback>
   );
 }
