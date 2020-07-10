@@ -50,13 +50,19 @@ Check out the The web version of here [React-Native-SuperHero-Web-App](https://g
 
 ## Screenshots
 
-[![React-Native-SuperHero-Mobile-App Screen Shot][product-screenshot-1]](https://superheroapp.netlify.app/)
-[![React-Native-SuperHero-Mobile-App Screen Shot][product-screenshot-2]](https://superheroapp.netlify.app/)
-[![React-Native-SuperHero-Mobile-App Screen Shot][product-screenshot-3]](https://superheroapp.netlify.app/)
-[![React-Native-SuperHero-Mobile-App Screen Shot][product-screenshot-4]](https://superheroapp.netlify.app/)
-[![React-Native-SuperHero-Mobile-App Screen Shot][product-screenshot-5]](https://superheroapp.netlify.app/)
-[![React-Native-SuperHero-Mobile-App Screen Shot][product-screenshot-6]](https://superheroapp.netlify.app/)
-[![React-Native-SuperHero-Mobile-App Screen Shot][product-screenshot-7]](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_1.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
+
+[<img src="assets/screenshots/Screenshot_2.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
+
+[<img src="assets/screenshots/Screenshot_3.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
+
+[<img src="assets/screenshots/Screenshot_4.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
+
+[<img src="assets/screenshots/Screenshot_5.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
+
+[<img src="assets/screenshots/Screenshot_6.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
+
+[<img src="assets/screenshots/Screenshot_7.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
 
 ### Built Withproduct-screenshot-6
 
@@ -143,10 +149,3 @@ hello@muguku.co.ke
 [license-url]: https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/machariamuguku/
-[product-screenshot-1]: assets/screenshots/Screenshot_1.png
-[product-screenshot-2]: assets/screenshots/Screenshot_2.png
-[product-screenshot-3]: assets/screenshots/Screenshot_3.png
-[product-screenshot-4]: assets/screenshots/Screenshot_4.png
-[product-screenshot-5]: assets/screenshots/Screenshot_5.png
-[product-screenshot-6]: assets/screenshots/Screenshot_6.png
-[product-screenshot-7]: assets/screenshots/Screenshot_7.png
