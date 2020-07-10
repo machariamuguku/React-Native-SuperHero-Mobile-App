@@ -50,13 +50,13 @@ Check out the The web version of here [React-Native-SuperHero-Web-App](https://g
 
 ## Screenshots
 
-[<img src="assets/screenshots/Screenshot_1.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_2.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_3.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_4.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_5.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_6.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_7.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="300px" height="400px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_1.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_2.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_3.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_4.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_5.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_6.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_7.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
 
 ### Built Withproduct-screenshot-6
 
