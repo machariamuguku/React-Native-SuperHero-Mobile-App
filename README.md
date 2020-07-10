@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://superheroapp.netlify.app/">
+  <a href="https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/">
     <img src="assets/app_logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -50,13 +50,13 @@ Check out the The web version of here [React-Native-SuperHero-Web-App](https://g
 
 ## Screenshots
 
-[<img src="assets/screenshots/Screenshot_1.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_2.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_3.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_4.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_5.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_6.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
-[<img src="assets/screenshots/Screenshot_7.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://superheroapp.netlify.app/)
+[<img src="assets/screenshots/Screenshot_1.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/)
+[<img src="assets/screenshots/Screenshot_2.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/)
+[<img src="assets/screenshots/Screenshot_3.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/)
+[<img src="assets/screenshots/Screenshot_4.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/)
+[<img src="assets/screenshots/Screenshot_5.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/)
+[<img src="assets/screenshots/Screenshot_6.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/)
+[<img src="assets/screenshots/Screenshot_7.png" alt="React-Native-SuperHero-Mobile-App Screen Shot" width="200px" height="300px">](https://github.com/machariamuguku/React-Native-SuperHero-Mobile-App/releases/tag/v1.0/)
 
 ### Built Withproduct-screenshot-6
 
